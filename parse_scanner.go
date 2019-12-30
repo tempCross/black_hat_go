@@ -116,7 +116,7 @@ func main() {
 			pchannel <- num
 		}
 	}()
-	for i := 0; i < 200; i++ {
+	for i := 0; i < len(ports); i++ {
 		port := <- results
 		if port != 0{
 			openports = append(openports, port)
