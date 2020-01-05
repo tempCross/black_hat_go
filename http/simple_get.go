@@ -16,11 +16,10 @@ func main(){
 	// Read response body
 	defer r1.Body.Close()
 
-	r2, err := ioutil.ReadAll(r1.Body)	
+	r1html, err := ioutil.ReadAll(r1.Body)	
 	if err != nil {
  		fmt.Println(err)
  	}
-
- 	// print out
- 	fmt.Println(os.Stdout, string(r2)) //<-- here !
+ 	fmt.Println(os.Stdout, string(r1html)) //<-- here !
+	
 }
